@@ -1,9 +1,9 @@
 /* PERSONALIZE THESE LINKS BEFORE PUBLISHING.
    Leave a value empty to show a helpful setup hint when clicked. */
 const CONTACT = {
-  email: '',                // example: 'tarikcampara04'
-  linkedin: '',             // example: 'https://www.linkedin.com/in/tarikcampara'
-  github: ''                // example: 'https://github.com/tarikcampara0'
+  email: 'https://tarikcampara04@gmail.com',             
+  linkedin: 'https://www.linkedin.com/in/tarikcampara',            
+  github: 'https://github.com/tarikcampara0'             
 };
 
 const $ = (selector) => document.querySelector(selector);
