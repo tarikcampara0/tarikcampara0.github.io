@@ -364,8 +364,9 @@ h3 { font-size: var(--step-lead); font-weight: 500; line-height: 1.2; letter-spa
   background: var(--blue);
   color: var(--white);
 }
-.footer-email {
-  padding: 20px 0 clamp(48px, 6vw, 88px);
+.site-footer .display-head { margin-bottom: 12px; }
+.footer-link {
+  padding: 8px 0;
   align-self: flex-start;
   font-size: var(--step-lead);
   font-weight: 500;
@@ -376,11 +377,7 @@ h3 { font-size: var(--step-lead); font-weight: 500; line-height: 1.2; letter-spa
   overflow-wrap: anywhere;
   transition: opacity 160ms;
 }
-.footer-email:hover { opacity: 0.75; }
-.footer-meta { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px var(--gap); }
-.footer-meta .text-link { padding: 8px 0; }
-.credits { font-size: var(--step-small); line-height: 1.4; }
-.credits a { text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.footer-link:hover { opacity: 0.75; }
 
 /* Motion. Everything hidden here is shown again without JS or with reduced motion. */
 @media (prefers-reduced-motion: no-preference) {
