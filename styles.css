@@ -165,7 +165,7 @@ h3 { font-size: var(--step-lead); font-weight: 500; line-height: 1.2; letter-spa
 .about-main > p:not(.lead) { max-width: 62ch; }
 .facts { display: flex; flex-direction: column; gap: 18px; max-width: 280px; }
 .facts dt { color: var(--soft-ink); font-size: var(--step-small); }
-.shot figcaption, .bridge figcaption { margin-top: 10px; font-size: var(--step-small); }
+.shot figcaption { margin-top: 10px; font-size: var(--step-small); }
 
 /* DeployOps: the dark field, where the product's own screens sit naturally */
 .deployops {
@@ -344,12 +344,6 @@ h3 { font-size: var(--step-lead); font-weight: 500; line-height: 1.2; letter-spa
 .deployops-foot h3 { margin-bottom: 8px; }
 .deployops-foot p { max-width: 46ch; }
 .deployops-links { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
-
-/* The one big picture */
-.bridge { background: var(--paper); padding-bottom: 8px; }
-.bridge-frame { height: clamp(320px, 62vw, 86vh); overflow: hidden; }
-.bridge img { height: 112%; object-fit: cover; object-position: 50% 78%; will-change: transform; }
-.bridge figcaption { padding: 0 var(--margin); color: var(--soft-ink); }
 
 /* Experience: a ledger with dates on their own line at the left */
 .experience { padding: var(--section) var(--margin); display: flex; flex-direction: column; gap: clamp(48px, 5vw, 80px); }

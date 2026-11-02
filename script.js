@@ -28,27 +28,8 @@ if ('IntersectionObserver' in window && !reducedMotion) {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.08, rootMargin: '0px 0px -24px 0px' });
+  }, { rootMargin: '0px 0px 15% 0px' }); // starts just before it scrolls into view, so a fast scroll never lands on a blank area
   $$('[data-reveal]').forEach((element) => observer.observe(element));
 } else {
   $$('[data-reveal]').forEach((element) => element.classList.add('revealed'));
-}
-
-// The bridge photograph drifts slowly as the page scrolls.
-const bridge = $('.bridge img');
-const bridgeFrame = $('.bridge-frame');
-if (!reducedMotion) {
-  let queued = false;
-  const drift = () => {
-    queued = false;
-    const box = bridgeFrame.getBoundingClientRect();
-    const progress = (box.top + box.height) / (window.innerHeight + box.height);
-    if (progress >= 0 && progress <= 1) {
-      bridge.style.transform = `translateY(${(progress - 1) * 10.7}%)`;
-    }
-  };
-  window.addEventListener('scroll', () => {
-    if (!queued) { queued = true; requestAnimationFrame(drift); }
-  }, { passive: true });
-  drift();
 }
